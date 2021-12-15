@@ -49,7 +49,7 @@ const AddTask = (props) => {
                 );
               })
             : null}
-          {/* for completed items */}
+          {/* completed items */}
           {props.todos.length > 0 && sort === "completed"
             ? props.todos.map((item) => {
                 return (
@@ -65,7 +65,7 @@ const AddTask = (props) => {
                 );
               })
             : null}
-          {/* for all items */}
+          {/* all items */}
           {props.todos.length > 0 && sort === "all"
             ? props.todos.map((item) => {
                 return (

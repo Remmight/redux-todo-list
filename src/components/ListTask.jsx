@@ -14,7 +14,7 @@ const ListTask = (props) => {
 
   const update = (id, value, e) => {
     if (e.which === 13) {
-      //here 13 is key code for enter key
+      
       updateTodo({ id, item: value });
       inputRef.current.disabled = true;
     }

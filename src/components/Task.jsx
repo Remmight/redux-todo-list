@@ -34,7 +34,6 @@ const Task = (props) => {
       setTodo("");
     }
   };
-  //console.log("props from store", props);
   return (
     <div className="addTodos">
       <input
@@ -51,5 +50,5 @@ const Task = (props) => {
     </div>
   );
 };
-//we can use connect method to connect this component with redux store
+
 export default connect(mapStateToProps, mapDispatchToProps)(Task);
